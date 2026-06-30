@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Masterblog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Masterblog</h1>
+
+    {% for post in posts %}
+    <article class="post">
+        <h2>{{ post.title }}</h2>
+        <p class="author">von {{ post.author }}</p>
+        <p class="content">{{ post.content }}</p>
+    </article>
+    {% endfor %}
+
+</body>
+</html>
