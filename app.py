@@ -121,5 +121,5 @@ def like(post_id):
 
 
 if __name__ == "__main__":
-    # Entwicklungsserver starten (Port 5001 wegen AirPlay auf macOS)
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    # Entwicklungsserver starten
+    app.run(host="0.0.0.0", port=5000, debug=True)
